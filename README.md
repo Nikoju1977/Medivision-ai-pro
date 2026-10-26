@@ -1,5 +1,8 @@
 # Medivision AI Pro — base PWA expérimentale
 
+> **Statut portfolio (octobre 2026) — variante conservée, non sélectionnée dans la vitrine.** Cette base PWABuilder est conservée comme prototype de structure PWA. La référence publique pour l'imagerie et la visualisation médicale est medicalvisionproai. Aucune aptitude au diagnostic n'est revendiquée. Voir [la politique de sélection](https://github.com/Nikoju1977/Nikoju1977/blob/main/CURATION.md) et [le projet de référence](https://github.com/Nikoju1977/medicalvisionproai).
+
+
 **Catégorie : prototype web / HealthTech** · Studio Niko Design
 
 > **État actuel du dépôt :** cette branche contient essentiellement le **starter PWABuilder** (Lit, TypeScript, Vite, Workbox et Shoelace). Les fichiers `package.json` et `src/pages/app-home.ts` portent encore des identifiants et textes de démonstration du modèle initial. Il serait donc trompeur de présenter cette base comme une application médicale prête à l'emploi.
