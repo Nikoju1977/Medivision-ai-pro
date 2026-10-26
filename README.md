@@ -1,35 +1,53 @@
-# PWA Starter
+# Medivision AI Pro — base PWA expérimentale
 
-[**Straight to Full Documentation**](https://docs.pwabuilder.com/#/starter/quick-start)
+**Catégorie : prototype web / HealthTech** · Studio Niko Design
 
-The PWABuilder pwa-starter is our opinionated, best practices, production tested starter that we use to build all of our PWAs, including [PWABuilder itself](https://blog.pwabuilder.com/posts/introducing-the-brand-new-pwa-builder/)! The pwa-starter is a starter codebase, just like create-react-app or the Angular CLI can generate, that uses the PWABuilder team&#39;s preferred front-end tech stack. We also have a CLI tool to allow you to create a PWA template from the command line.
+> **État actuel du dépôt :** cette branche contient essentiellement le **starter PWABuilder** (Lit, TypeScript, Vite, Workbox et Shoelace). Les fichiers `package.json` et `src/pages/app-home.ts` portent encore des identifiants et textes de démonstration du modèle initial. Il serait donc trompeur de présenter cette base comme une application médicale prête à l'emploi.
 
-## Jump Right In
+Pour le prototype documenté d'imagerie médicale de Studio Niko Design, voir le dépôt séparé **[medicalvisionproai](https://github.com/Nikoju1977/medicalvisionproai)**.
 
-Install the PWABuilder CLI:
+## Démarrer
 
-`npm i -g @pwabuilder/cli`
+Prérequis : Node.js et npm compatibles avec les dépendances du projet.
 
-And create a new app with this command:
+```bash
+npm ci
+npm run dev
+```
 
-`pwa create`
+L'URL locale est indiquée par Vite dans le terminal.
 
-And start your app locally with:
+## Vérifier et construire
 
-`pwa start`
+```bash
+npm run build
+```
 
-And that's it! Good luck on your Progressive Web App adventure!
+Le script exécute TypeScript (`tsc`) puis Vite. Cette documentation ne prétend pas que la compilation, les tests ou l'installation PWA ont été validés ici.
 
-## More Info
+## Structure
 
-[![Get started with the pwa-starter!](https://img.youtube.com/vi/u3pWKpmic_k/0.jpg)](https://www.youtube.com/watch?v=u3pWKpmic_k)
+| Chemin | Rôle |
+| --- | --- |
+| `src/app-index.ts` | Composant racine Lit |
+| `src/pages/app-home.ts` | Page d'accueil du starter |
+| `src/components/` | Composants d'interface |
+| `public/` | Ressources statiques |
+| `vite.config.ts` | Configuration Vite |
+| `swa-cli.config.json` | Configuration Azure Static Web Apps |
 
-With it you get an app that:
-- Has no build system to set up and no boilerplate code to add. Everything is included out of the box.
-- Has a Service Worker system using [Workbox](https://developers.google.com/web/tools/workbox/)
-- Scores close to 100 on Lighthouse out of the box
-- Has everything needed to be installable in the browser
-- Is ready to be package for the app stores using [PWABuilder](https://www.pwabuilder.com)
-- Uses the [Azure Static Web Apps CLI](https://azure.github.io/static-web-apps-cli) which enables emulating your production environment locally, and gets you ready for deploying to Azure Static Web Apps!
+## Avant de publier une application médicale
 
-and all with just a few button clicks 😊.
+- Remplacer le contenu de démonstration et choisir un nom de package spécifique.
+- Définir le périmètre médical et les usages explicitement **exclus**.
+- Vérifier les licences des composants réutilisés.
+- Ajouter des tests techniques, une politique de confidentialité adaptée et une revue de sécurité.
+- Ne jamais utiliser de données de patients réels dans une démonstration publique sans cadre approprié.
+
+Ce dépôt ne revendique aucune validation clinique ni conformité réglementaire.
+
+## Crédits
+
+Base dérivée du [PWABuilder PWA Starter](https://github.com/pwa-builder/pwa-starter). Consulter sa documentation et les licences de ses dépendances.
+
+[Catalogue Studio Niko Design](https://github.com/Nikoju1977).
